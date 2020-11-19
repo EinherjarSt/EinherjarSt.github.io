@@ -2460,8 +2460,9 @@ amzn-kf8 {
 <ul class="sectlevel2">
 <li><a href="#_que_es_jhawanetframework">1.1. Que es JHawanetFramework</a></li>
 <li><a href="#_tipos_de_usuarios">1.2. Tipos de usuarios</a></li>
-<li><a href="#_especificaciones_técnicas_del_sistema">1.3. Especificaciones técnicas del sistema</a></li>
-<li><a href="#_como_instalar_el_software">1.4. Como instalar el software</a></li>
+<li><a href="#_capacidades_actuales_del_programa">1.3. Capacidades actuales del programa</a></li>
+<li><a href="#_especificaciones_técnicas_del_sistema">1.4. Especificaciones técnicas del sistema</a></li>
+<li><a href="#_como_instalar_el_software">1.5. Como instalar el software</a></li>
 </ul>
 </li>
 <li><a href="#_funcionalidades_de_la_aplicación">2. Funcionalidades de la aplicación</a>
@@ -2542,7 +2543,41 @@ amzn-kf8 {
 </div>
 </div>
 <div class="sect2">
-<h3 id="_especificaciones_técnicas_del_sistema">1.3. Especificaciones técnicas del sistema</h3>
+<h3 id="_capacidades_actuales_del_programa">1.3. Capacidades actuales del programa</h3>
+<div class="paragraph">
+<p>El sistema en este momento cuenta con las siguientes capacidades:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Cargar y visualizar la configuración de los elementos de la red.</p>
+</li>
+<li>
+<p>Ejecutar la simulación de la red utilizando los valores por defecto que vienen en el archivo de configuración de ésta.</p>
+</li>
+<li>
+<p>Ejecutar algoritmos de optimización monoobjetivos y multiobjetivos para los problemas implementados.</p>
+</li>
+<li>
+<p>Visualizar el gráfico de las soluciones para problemas de uno y dos objetivos.</p>
+</li>
+<li>
+<p>Visualizar los resultados de algoritmos de optimización.</p>
+</li>
+<li>
+<p>Exportar los resultados de la optimización a excel y csv.</p>
+</li>
+<li>
+<p>Remplazar en la red cargada los valores de la solución para generar un nuevo archivo de configuración de red.</p>
+</li>
+<li>
+<p>Comparar algoritmos metaheurísticos multiobjetivos utilizando indicadores.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_especificaciones_técnicas_del_sistema">1.4. Especificaciones técnicas del sistema</h3>
 <div class="paragraph">
 <p>El software fue desarrollado bajo el lenguaje de programación Java, utilizando la libreria JavaFX para la creación de la interfaz gráfica. Adicionalente, se hace uso de la librería dinámica <a href="https://www.epa.gov/water-research/epanet">EpanetToolkit</a> para realizar las simulaciones hidráulicas sobre las redes de agua potable y evaluar las soluciones generadas por los algoritmos metaheurísticos.</p>
 </div>
@@ -2570,12 +2605,12 @@ amzn-kf8 {
 </div>
 </div>
 <div class="sect2">
-<h3 id="_como_instalar_el_software">1.4. Como instalar el software</h3>
+<h3 id="_como_instalar_el_software">1.5. Como instalar el software</h3>
 <div class="paragraph">
 <p>Para instalar la aplicación se necesita tener instalado en el sistema Java 1.8 64bits y Maven. El código de la aplicación se encuentra alojado en github en el siguiente <a href="https://github.com/EinherjarSt/ProyectoDeMemoria">repositorio</a>. A continuación se explica como instalar cada uno de estos elementos.</p>
 </div>
 <div class="sect3">
-<h4 id="_como_instalar_java">1.4.1. Como instalar Java</h4>
+<h4 id="_como_instalar_java">1.5.1. Como instalar Java</h4>
 <div class="paragraph">
 <p>Para instalar java vaya al siguiente <a href="https://www.oracle.com/cl/java/technologies/javase/javase-jdk8-downloads.html">enlace</a>. Una vez en el enlace descargue el la versión de java para Window x64 como se muestra en la siguiente imagen.</p>
 </div>
@@ -2679,7 +2714,7 @@ Al intentar descargar Java le solicitará que ingrese una cuenta de oracle. Si n
 </div>
 </div>
 <div class="sect3">
-<h4 id="_como_instalar_maven">1.4.2. Como instalar Maven</h4>
+<h4 id="_como_instalar_maven">1.5.2. Como instalar Maven</h4>
 <div class="paragraph">
 <p>Para instalar maven vaya al siguiente <a href="https://maven.apache.org/download.cgi">link</a> y descargue el archivo que se muestra en la imagen a continuación.</p>
 </div>
@@ -2750,7 +2785,7 @@ Al intentar descargar Java le solicitará que ingrese una cuenta de oracle. Si n
 </div>
 </div>
 <div class="sect3">
-<h4 id="_abrir_proyecto_con_eclipse">1.4.3. Abrir proyecto con eclipse</h4>
+<h4 id="_abrir_proyecto_con_eclipse">1.5.3. Abrir proyecto con eclipse</h4>
 <div class="paragraph">
 <p>Abrir el proyecto desde eclipse y agregar la ruta lib/additionalResources y la carpeta src/resource, en caso de que no se encuentre, al <strong>build path</strong>. Para ello, seleccione la carpeta y muestre el menú contextual. Luego, en la opción <strong>Build path</strong> seleccione la opción <strong>Use as source folder</strong> (Puede cambiar la configuración también desde <strong>Configure build path</strong>). Esto se muestra en la imagen a continuación:</p>
 </div>
@@ -2809,7 +2844,7 @@ Al intentar descargar Java le solicitará que ingrese una cuenta de oracle. Si n
 </div>
 </div>
 <div class="sect3">
-<h4 id="_abrir_proyecto_en_intellij">1.4.4. Abrir Proyecto en IntelliJ</h4>
+<h4 id="_abrir_proyecto_en_intellij">1.5.4. Abrir Proyecto en IntelliJ</h4>
 <div class="paragraph">
 <p>Abrir o exportar la carpeta del proyecto en IntelliJ. Para esto hay dos formas de hacerlo. La primera consiste en hacerlo desde la ventana de bienvenida usando la opción <b class="button">Open or import</b> como se muestra a continuación.</p>
 </div>
@@ -4435,13 +4470,12 @@ Los indicadores deben tener un constructor que no reciba parametros. Este constr
 </table>
 </div>
 <div class="paragraph">
-<p>Una vez se tenga implementado el indicador, éste debe ser agregado en la lista de la clase <strong><em>RegistrableConfiguration</em></strong>. A continuación se muestra los valores de dicha lista que consisten en los indicadores permitidos en la aplicación.</p>
+<p>Una vez se tenga implementado el indicador, éste debe ser agregado en la lista de la clase <strong><em>RegistrableConfiguration</em></strong>. A continuación se muestra de manera simplificada los valores de la clase anteriormente mencionada.</p>
 </div>
 <div class="listingblock">
 <div class="content">
 <pre class="prettyprint highlight nowrap"><code data-lang="java">public final class RegistrableConfiguration {
-	// Métodos para agregar los operadores
-
+	public static final List&lt;Class&lt;? extends MultiObjectiveRegistrable&gt;&gt; MULTIOBJECTIVES_PROBLEMS = new ArrayList&lt;&gt;();
 	public static final List&lt;Class&lt;? extends GenericIndicator&gt;&gt; INDICATORS = new ArrayList&lt;&gt;();
 
 	// Lista de indicadores implementados en la aplicación.
@@ -4456,9 +4490,11 @@ Los indicadores deben tener un constructor que no reciba parametros. Este constr
 		INDICATORS.add(GeneralizedSpread.class);
 		INDICATORS.add(GenerationalDistance.class);
 	}
-
 }</code></pre>
 </div>
+</div>
+<div class="paragraph">
+<p>Los indicadores implementados pueden ser utilizados por todos los algoritmos que se encuentran en la variable <strong><em>MULTIOBJECTIVES_PROBLEMS</em></strong>.</p>
 </div>
 <div class="paragraph">
 <p>El siguiente código muestra como ejemplo la implementación del indicador Epsilon.</p>
@@ -4541,6 +4577,33 @@ public class Epsilon&lt;S extends Solution&lt;?&gt;&gt; extends GenericIndicator
         return "EP";
     }
 }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>La lista de selección de problemas que se muestra en la imagen a continuación. Se construye agrupando los elementos presentes en la variable <strong><em>MULTIOBJECTIVES_PROBLEMS</em></strong>, presente en la clase <strong><em>RegistrableConfiguration</em></strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/funcionalidades/indicadores/eleccion_experimentos.png" alt="eleccion experimentos"></span></p>
+</div>
+<div class="paragraph">
+<p>Para la tabla superior se utiliza como nombre del problema, el valor en la anotación @NewProblem() en su atributo <em>displayName</em>. Mientras que en la tabla inferior, se utiliza el valor en el atributo <em>algorithmName</em>. A modo de ejemplo se presenta unicamente la anotación @NewProblem para 3 clases agregadas en la lista <strong><em>MULTIOBJECTIVES_PROBLEMS</em></strong>, correspondientes a los elementos mostrados en la imagen anterior.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight nowrap"><code data-lang="java"> // Para la clase PumpSchedulingNSGAIIRegister.class
+ @NewProblem(displayName = "Pumping Scheduling", algorithmName = "NSGA-II", description = "Solve the PumpScheduling Problem.\n" +
+            "Objective1: energy cost\n" +
+            "Objective2: maintenance Cost")
+
+ // Para la clase PumpSchedulingSMPSORegister.class
+ @NewProblem(displayName = "Pumping Scheduling", algorithmName = "SMPSOInteger", description = "Solve the PumpScheduling Problem.\n" +
+            "Objective1: energy cost\n" +
+            "Objective2: maintenance Cost")
+
+ // Para la clase PumpSchedulingSPA2Register.class
+ @NewProblem(displayName = "Pumping Scheduling", algorithmName = "SPA2", description = "Solve the PumpScheduling Problem.\n" +
+            "Objective1: energy cost\n" +
+            "Objective2: maintenance Cost")</code></pre>
 </div>
 </div>
 </div>
